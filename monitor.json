@@ -1,0 +1,12 @@
+{
+    "emails": [],
+    "password": "test",
+    "sender": "placeholder",
+    "sender-name": "System Administrator",
+    "sender-port": 587,
+    "sender-server": "Placeholder",
+    "targets": {
+        "target-list": []
+    },
+    "useEmail": "smtp"
+}
