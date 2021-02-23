@@ -34,20 +34,19 @@ with open("monitor.json", "r") as jsonFile:
 
 while not stop:
     for target in targets["target-list"]:
+        target_prev_failed = True
         try:
-            verbose_ping(monitordata["targets"][target]["ip"],count=10)
+            verbose_ping(monitordata["targets"][target]["ip"], count=10)
             try:
                 index = failed_targets.index(target)
+            except KeyError:
+                target_prev_failed = False
+            except ValueError:
+                target_prev_failed = False
+            if target_prev_failed:
                 failed_targets.remove(target)
                 sendRestoredEmail(email, target, monitordata["sender"], monitordata["password"],
                                   monitordata["sender-name"], monitordata["sender-server"], monitordata["sender-port"])
-            except KeyError:
-                print("Target not found")
-            except ValueError:
-                print("Target not found")
-
-
-
         except PingError as Ex:
             try:
                 smindex = failed_targets.index(target)

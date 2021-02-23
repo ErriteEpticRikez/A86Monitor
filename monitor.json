@@ -1,12 +1,19 @@
 {
-    "emails": [],
-    "password": "test",
+    "emails": [
+        "it@greatnews.life"
+    ],
+    "password": "56L2Z7D9D9744KCm",
     "sender": "placeholder",
-    "sender-name": "System Administrator",
+    "sender-name": "system@greatnews.life",
     "sender-port": 587,
-    "sender-server": "Placeholder",
+    "sender-server": "smtp.office365.com",
     "targets": {
-        "target-list": []
+        "Test Pi": {
+            "ip": "192.168.0.213"
+        },
+        "target-list": [
+            "Test Pi"
+        ]
     },
     "useEmail": "smtp"
 }
