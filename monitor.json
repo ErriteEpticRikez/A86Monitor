@@ -1,12 +1,19 @@
 {
-    "emails": [],
-    "password": "test",
+    "emails": [
+        "***REMOVED***"
+    ],
+    "password": "***REMOVED***",
     "sender": "placeholder",
-    "sender-name": "System Administrator",
+    "sender-name": "***REMOVED***",
     "sender-port": 587,
-    "sender-server": "Placeholder",
+    "sender-server": "smtp.office365.com",
     "targets": {
-        "target-list": []
+        "Test Pi": {
+            "ip": "192.168.0.213"
+        },
+        "target-list": [
+            "Test Pi"
+        ]
     },
     "useEmail": "smtp"
 }

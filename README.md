@@ -1,7 +1,7 @@
 # A86Monitor
 A lightweight ping monitoring system that runs on ARM and x86 via Docker.
 
-##Setup
+## Setup
 In order to setup you need to create an image using the docker file. Once the container is running.
 `sudo docker build -t a86monitor .`
 
