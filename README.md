@@ -1,24 +1,15 @@
 # A86Monitor
-A lightweight ping monitoring system that runs on ARM and x86 via Docker.
+A lightweight ping and website monitoring system that runs on ARM and x86.
+
+Currently, this repository contains the code for V2.0 that rewrites the program in Rust and adds the ability for HTTP
+monitoring
+
+## History about A86Monitor
+A86 Monitor was created by Michael Riley during his time at Greatnews.life / Ideas in Motion Media as an application
+that would monitor the internal network for failover events to the offices secondary connection since EdgeOS did not
+have support for notifications of when failovers occurred. 
+
 
 ## Setup
-In order to setup you need to create an image using the docker file. Once the container is running.
-`sudo docker build -t a86monitor .`
-
-You will need to get into the container
-
-`sudo docker exec -it /bin/bash container_name`
-
-This will remote you into the container and you will need to run the configurator
-
-Run `python3 configurator.py`
-
-This will run you through multiple prompts, before you add any targets make sure to configure the email servers first
-and set the sender email/password. This may lead to issues if you do not have a valid email server set.
-
-Once you configure all of your settings you can `exit` out of the docker container. 
-
-You will need to restart the docker container 
-`sudo docker restart container name`
-
-Your done!
+At this time the Configurator is being rewritten in Rust. This section will be updated once the configurator is starting to
+be built.

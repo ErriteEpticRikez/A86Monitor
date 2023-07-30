@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/A86Monitor.iml" filepath="$PROJECT_DIR$/.idea/A86Monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A86Monitor.iml" filepath="$PROJECT_DIR$/A86Monitor.iml" />
     </modules>
   </component>
 </project>
