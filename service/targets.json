@@ -1,0 +1,15 @@
+{
+  "Test Pi": {
+    "type": "ping",
+    "target": "192.168.0.213",
+    "enabled": true
+  },
+  "gnl_site": {
+    "type": "http",
+    "target": "https://greatnews.life",
+    "enabled": true
+  },
+  "target-list": [
+    "Test Pi", "gnl_site"
+  ]
+}
